@@ -73,7 +73,7 @@ for d in range(D):
             E = [extraction(E[0])] + E
         #if k != 0 and k % 2000 == 0:
             #cv2.imwrite(f"dimemsion_{d}_{k}.png", B[L-1]*255)
-    #cv2.imwrite(f"dimemsion_{d}.png", B[L-1]*255)
+    cv2.imwrite(f"dimemsion_{d}.png", B[L-1]*255)
     result[:, :, d]=B[L-1]
-cv2.imwrite(sys.argv[2], result*255)
+cv2.imwrite("result.png", result*255)
         
